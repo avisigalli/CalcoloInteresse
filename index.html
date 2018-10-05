@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang=it>
+<head>
+<title>CRT</title>
+<meta charset=utf-8>
+<!-- css di skeleton -->
+<link rel=stylesheet href=http://getskeleton.com/dist/css/skeleton.css>
+<!-- file js con le funzioni -->
+<script src=funzioni.js></script>
+</head>
+
+<body>
+<div class=container>
+<div class=row>
+<div class="twelve columns">
+<h3>Calcolo Interesse Semplice</h3>
+<p>Dato un capitale <b>C</b>, un tasso di interesse <b>r</b>
+e una quantità di tempo <b>T</b>, l'interesse semplice esprime
+l'interesse maturato su quel capitale nel periodo di tempo
+specificato.</p>
+<form name=crt>
+<label for=C>Capitale</label>
+<input class=u-full-width type=number name=C min=0.01 step=0.01 required placeholder="Capitale">
+<label for=r>Tasso di interesse %</label>
+<input class=u-full-width type=number name=r min=0.01 step=0.01 required placeholder="Tasso%">
+<label for=T>Tempo</label>
+<input class=u-full-width type=number name=T min=1 step=1 required placeholder="Tempo">
+<label for=U>Unità di tempo</label>
+<select class=u-full-width name=U>
+<option value=0>Scegli...</option>
+<option value=1>Giorni</option>
+<option value=2>Mesi</option>
+<option value=3>Anni</option>
+</select><br>
+<input class=u-full-width type=reset value=Annulla onclick=annulla()>
+<button class="button-primary u-full-width" onclick=calcola()>Calcola</button>
+</form>
+<p id=risultato> </p>
+</div>
+</div>
+</div>
+</body>
+</html>
