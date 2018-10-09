@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns   = "http://www.w3.org/ns/widgets"
+    xmlns:gap   = "http://phonegap.com/ns/1.0"
+    id          = "com.crt.app"
+    versionCode = "10"
+    version     = "1.0" >
+
+  <name>App CRT</name>
+
+  <description>
+     App per calcolare l'interesse semplice
+  </description>
+
+  <author email="alessandro.visigalli@canossamilano.org">
+      Alessandro Visigalli
+  </author>
+   
+  <!-- Icone per Android e iOS -->
+  <icon src="icona.png" platform="android" qualifier="ldpi" />
+  <icon src="icona.png" platform="android" qualifier="mdpi" />
+  <icon src="icona.png" platform="android" qualifier="hdpi" />
+  
+  <icon src="icona.png" platform="ios" qualifier="ldpi" />
+  <icon src="icona.png" platform="ios" qualifier="mdpi" />
+  <icon src="icona.png" platform="ios" qualifier="hdpi" />
+  
+  <!-- Abilita l'accesso al web -->
+  <access origin="*" />
+  <!-- Accesso a Skeleton per il css -->
+   <plugin name="cordova-plugin-whitelist" source="npm" />
+  <allow-navigation href="*://*getskeleton.com/*" />
+</widget>
